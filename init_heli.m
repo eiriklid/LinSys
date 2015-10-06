@@ -15,7 +15,7 @@
 %%%%%%%%%%% Calibration of the encoder and the hardware for the specific
 %%%%%%%%%%% helicopter
 Joystick_gain_x = -1;
-Joystick_gain_y = 0;
+Joystick_gain_y = 1;
 
 
 %%%%%%%%%%% Physical constants
@@ -26,3 +26,8 @@ l_p = 0.175; % distance pitch axis to motor [m]
 m_c = 1.92; % Counterweight mass [kg]
 m_p = 0.72; % Motor mass [kg]
 
+
+
+%%%%%%%%%% Regulator constants
+K_pd = 11;
+K_f = 0.144759;
